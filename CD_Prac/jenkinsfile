@@ -1,8 +1,10 @@
-pipeline {
-    agent any
-    stages {
-        stage('print') {
-            echo 'H'
-        }
+node('master'){
+    
+    stage('compile'){
+        bat 'BasicCalculator.java'
+    }
+    
+    stage('run'){
+        bat 'java BasicCalculator'
     }
 }
