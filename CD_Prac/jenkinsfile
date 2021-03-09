@@ -1,10 +1,6 @@
 node('master'){
     
     stage('compile'){
-        bat 'javac BasicCalculator.java'
-    }
-    
-    stage('run'){
-        bat 'java BasicCalculator'
+        bat 'dir'
     }
 }
